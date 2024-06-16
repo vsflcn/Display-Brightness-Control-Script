@@ -23,3 +23,27 @@ set_brightness_linux() {
     local brightness level=$1
     powershell.exe -ExecutionPolicy Bypass -Command "& {Get-WmiObject -Namespace root/WMI -Class WmiMonitorBrightnessMethods | foreach { $_.WmiSetBrightness(1, $brightness_level) }}"
 }
+
+#Check for current operation system
+case "$(uname -s)" in
+    Darwin)
+        # macOS
+        echo "Running on macOS"
+        set_brightness_macos 0.8  # Set brightness to 80%
+        ;;
+    Linux)
+        # Linux
+        echo "Running on Linux"
+        set_brightness_linux 1.0  # Set brightness to 100%
+        ;;
+    CYGWIN*|MINGW32*|MSYS*|MINGW*)
+        # Windows
+        echo "Running on Windows"
+        set_brightness_windows 50  # Set brightness to 50%
+        ;;
+    *)
+        # Another operation systems
+        echo "Unsupported operating system"
+        exit 1
+        ;;
+esac
