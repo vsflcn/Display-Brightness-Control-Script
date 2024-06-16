@@ -1,11 +1,11 @@
 # Display Brightness Control Script
 Adaptive Bash script file for Linux, MacOS and Windows
 
-##Usage
-###Running the Script
-    Download the brightness_control.sh file.
+## Usage
+### Running the Script
+Download the brightness_control.sh file.
     
-    Open a terminal (command prompt) on your device.
+Open a terminal (command prompt) on your device.
 
     Executing the Script
         Run the script using the following command:
