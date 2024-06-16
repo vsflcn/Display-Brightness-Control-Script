@@ -3,7 +3,7 @@ Adaptive Bash script file for Linux, MacOS and Windows
 
 ## Usage
 ### Running the Script
-Download the brightness_control.sh file.
+Download the adaptive.sh file.
     
 Open a terminal (command prompt) on your device.
 
