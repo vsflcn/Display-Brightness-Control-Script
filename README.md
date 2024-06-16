@@ -12,8 +12,8 @@ Run the script using the following command:
 
         bash adaptive.sh
 
-Expected Behavior
-    The script will automatically identify the operating system and set the display brightness based on predefined parameters:
+### Expected Behavior
+The script will automatically identify the operating system and set the display brightness based on predefined parameters:
     1) On macOS, brightness will be set to 80%.
     2) On Linux, brightness will adjust depending on the time of day (100% or 50%).
     3) On Windows, brightness will be set to 50%.
