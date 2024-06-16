@@ -34,7 +34,7 @@ Ensure correct display identifier (eDP-1 in the example).
 Requires PowerShell with script execution policy enabled.
 Administrator rights for brightness adjustment.
 
-### Features
+## Features
 #### Adaptability:
 Automatically selects the appropriate brightness adjustment method based on the detected OS.
 #### Flexibility:
