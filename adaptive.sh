@@ -6,7 +6,7 @@ set_brightness_mac() {
     osascript -e "tell application "\System Events\" to set brightness level of display 1 to $brighness_level
 }
 
-#Function to manage brighness on Linux
+#Function to manage brightness on Linux
 set_brightness_linux() {
     local brightness level=$1
     current_hour=$(date + "%H")
@@ -16,4 +16,10 @@ set_brightness_linux() {
     else
         xrandr --output eDP-1 --brightness 0.3
     fi
+}
+
+#Function to manage brightness on Windows
+set_brightness_linux() {
+    local brightness level=$1
+    powershell.exe -ExecutionPolicy Bypass -Command "& {Get-WmiObject -Namespace root/WMI -Class WmiMonitorBrightnessMethods | foreach { $_.WmiSetBrightness(1, $brightness_level) }}"
 }
