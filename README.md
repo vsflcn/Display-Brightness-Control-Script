@@ -35,8 +35,10 @@ Requires PowerShell with script execution policy enabled.
 Administrator rights for brightness adjustment.
 
 ### Features
-Adaptability: Automatically selects the appropriate brightness adjustment method based on the detected OS.
-Flexibility: Easily configurable for different settings and displays if needed.
+#### Adaptability:
+Automatically selects the appropriate brightness adjustment method based on the detected OS.
+#### Flexibility:
+Easily configurable for different settings and displays if needed.
 
 #### Notes
 Adjust the display identifier (eDP-1) on Linux as per your specific display setup.
