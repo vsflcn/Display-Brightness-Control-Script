@@ -7,10 +7,8 @@ Download the brightness_control.sh file.
     
 Open a terminal (command prompt) on your device.
 
-    Executing the Script
-        Run the script using the following command:
-
-        bash
+### Executing the Script
+Run the script using the following command:
 
         bash brightness_control.sh
 
